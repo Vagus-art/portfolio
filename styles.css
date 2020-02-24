@@ -156,6 +156,24 @@ footer i{
     z-index:0;
 }
 
+@media (max-width:600px){
+    .portrait{
+        height:100vh;
+    }
+    .md{
+        display:none;
+    }
+    .fa-bars{
+        font-size: x-large;
+    }
+}
+
+@media (min-width:600px){
+    .osm{
+        display:none;
+    }
+}
+
 .portrait-overlay{
     position: absolute;
     width:inherit;
