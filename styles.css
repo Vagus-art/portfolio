@@ -6,6 +6,10 @@
     --var-5:50px;  
 }
 
+i:hover{
+    cursor:pointer;
+}
+
 @font-face {
     font-family: 'voyager_grotesqueregular';
     src: url('lib/fonts/voyager_grotesqueregular-webfont.woff2') format('woff2'),
@@ -131,18 +135,21 @@ footer i{
     text-align:center;
 }
 
+.navbar-item > a{
+    text-decoration: none;
+    color:inherit;
+
+}
+
 .brand{
     position:absolute;
-    font-family: 'moon_of_jupiterregular';
     left:0;
     font-size: x-large;
 }
 
-.navbar-item > a{
+.brand > a{
     font-family: 'moon_of_jupiterregular';
     font-size: x-large;
-    text-decoration: none;
-    color:inherit;
 }
 
 .portrait{
@@ -172,6 +179,51 @@ footer i{
     .osm{
         display:none;
     }
+}
+
+.drawer{
+    position:fixed;
+    top:0;
+    left:0;
+    height:100vh;
+    width:300px;
+    z-index:4;
+    background-color:white;
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+}
+
+.drawer-triggered{
+    transform: translateX(0);
+}
+
+#overlay{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    z-index:4;
+    transition: opacity 0.3s;
+    opacity: 0;
+    background-color: black;
+}
+
+.overlay-triggered{
+    display:unset !important;
+    opacity:0.7 !important;
+}
+
+.drawer-menu{
+    display:flex;
+    flex-direction:column;
+}
+
+.drawer-item > a{
+    text-decoration: none;
+    color:inherit;
+    font-size: larger;
 }
 
 .portrait-overlay{
@@ -225,6 +277,81 @@ footer i{
     display:grid;
     grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
     
+}
+
+.terminal-container{
+    background-color:gray;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 2px solid gray;
+    -webkit-box-shadow: -1px 5px 19px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 5px 19px 0px rgba(0,0,0,0.75);
+    box-shadow: -1px 5px 19px 0px rgba(0,0,0,0.75);
+}
+
+.terminal-bar{
+    display:flex;
+    padding:10px;
+}
+
+.terminal-title{
+    flex-grow:1;
+    text-align:center;
+    color:white;
+    font-weight: bold;
+}
+
+.terminal-grid{
+    display:grid;
+    grid-template-columns: 20fr 25px;
+    opacity:0.9;
+}
+
+.terminal-text{
+    padding:5px;
+    color: greenyellow;
+    background-color:black;
+    min-height: 40vh;
+}
+
+.terminal-text span{
+    font-family: 'Inconsolata';
+    font-size:large;
+}
+
+.terminal-text p,.username{
+    font-family: 'Inconsolata';
+    font-size:large;
+}
+
+.terminal-scroller{
+    background-color:darkslategray;
+}
+
+.terminal-scroller-bar{
+    background-color: rgb(22, 37, 37);
+    height:40px;
+}
+
+.terminal-buttons{
+    display:flex;
+    align-items: center;
+}
+
+.cross{
+    font-size:1.2em;
+}
+
+.minimize{
+    padding-bottom:17%;
+}
+
+.terminal-buttons i{
+    margin-left:8px;
+}
+
+.username{
+    color:red;
 }
 
 /*basics end there*/

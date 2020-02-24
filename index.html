@@ -6,10 +6,11 @@
     <title>Vagus-Dev | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="lib/css/animate.css">
-    <link href="https://fonts.googleapis.com/css?family=Tomorrow|Trade+Winds&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/63130eec7b.js" crossorigin="anonymous"></script> 
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Tomorrow&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/63130eec7b.js" crossorigin="anonymous"></script>
+    <script src="lib/js/drawerActions.js"></script>
 </head>
-<body>
+<body id="body">
     <nav class="navbar p-1">
         <ul class="navbar-menu">
             <li class="navbar-item brand p-1">
@@ -24,8 +25,22 @@
             <li class="navbar-item md p-1">
                 <a href="#">About</a>
             </li>
-            <li class="navbar-item osm p-1">
+            <li class="navbar-item osm p-1" id="drawermenubtn">
                 <i class="fas fa-bars"></i>
+            </li>
+        </ul>
+    </nav>
+    <div id="overlay"></div>
+    <nav class="drawer osm" id="drawer">
+        <ul class="drawer-menu">
+            <li class="drawer-item p-2">
+                <a href="#">Home</a>
+            </li>
+            <li class="drawer-item p-2">
+                <a href="#">Contact</a>
+            </li>
+            <li class="drawer-item p-2">
+                <a href="#">About</a>
             </li>
         </ul>
     </nav>
@@ -70,6 +85,36 @@
                         <div class="card-text">
                             <h2 class="card-title">Project 3</h2>
                             <div class="card-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, omnis.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portrait text-white" style="background-image: url(img/header-3.jpg);">
+            <div class="portrait-overlay"></div>
+            <!--<img src="img/header-img.jpg" alt="" class="portrait-background">-->
+            <div class="portrait-text bottom p-3 animated fadeInUp">
+                <h1 class="portrait-title">WHOAMI</h1>
+                <h5 class="portrait-subtitle">--help</h5>
+            </div>        
+        </div>
+        <div class="container">
+            <div class="terminal-container">
+                <div class="terminal-bar">
+                    <h3 class="terminal-title">Terminal</h3>
+                    <div class="terminal-buttons text-white">
+                        <i class="far fa-window-minimize minimize"></i>
+                        <i class="far fa-square"></i>
+                        <i class="fas fa-times cross"></i>
+                    </div>
+                </div>
+                <div class="terminal-grid">
+                    <div class="terminal-text">
+                        <p><span class="username">Vagus-dev@ubuntu </span><span class="text-white">: ~/user/info$ </span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia est nesciunt ratione ad obcaecati vitae fugiat, similique ab voluptatibus eum? Temporibus nulla dolore dolor natus quis quas eum. Officiis rerum, rem odit fugiat perferendis quas inventore debitis numquam facilis reprehenderit.</p>
+                    </div>
+                    <div class="terminal-scroller">
+                        <div class="terminal-scroller-bar">
+
                         </div>
                     </div>
                 </div>
