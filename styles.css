@@ -263,10 +263,23 @@ footer i{
     border: 1px solid black;
     width:300px;
     margin:auto;
+    overflow:hidden;
+}
+
+.card:hover > div{
+    filter: blur(5px);
+    cursor: pointer;
 }
 
 .card-header{
     width:100%;
+    height:300px;
+    background-position: center;
+}
+
+.full{
+    background-size: cover;
+    background-position-x: left;
 }
 
 .card-header > img{
