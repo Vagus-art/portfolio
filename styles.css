@@ -34,14 +34,6 @@ i:hover{
     font-family: 'Tomorrow',Helvetica;
 }
 
-/*
-.flex{
-    overflow-x:hidden;
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-}*/
-
 footer{
     padding-top:50px;
     padding-bottom:50px;
@@ -258,6 +250,7 @@ footer i{
 }
 
 .card{
+    position:relative;
     display:flex;
     flex-direction: column;
     border: 1px solid black;
@@ -268,7 +261,16 @@ footer i{
 
 .card:hover > div{
     filter: blur(5px);
-    cursor: pointer;
+}
+
+.card:hover > .card-overlay{
+    opacity:0.8;
+}
+
+.card:hover > .card-menu{
+    display:flex !important;
+    -webkit-animation: slideInUp 0.4s;
+    animation: slideInUp 0.4s;
 }
 
 .card-header{
@@ -290,6 +292,32 @@ footer i{
     display:grid;
     grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
     
+}
+
+.card-overlay{
+    top:0;
+    left:0;
+    position:absolute;
+    width:100%;
+    height:100%;
+    opacity:0;
+    transition: opacity 0.3s;
+    background-color:black;
+    z-index:1;
+    filter: none !important;
+}
+
+.card-menu{
+    color:white;
+    display:none;
+    width:100%;
+    justify-content:space-evenly;
+    padding:15px;
+    position:absolute;
+    bottom:5px;
+    z-index:2;
+    filter: none !important;
+    font-size: xx-large;
 }
 
 .terminal-container{
