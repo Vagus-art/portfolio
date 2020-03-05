@@ -48,6 +48,14 @@
     <nav class="drawer osm" id="drawer">
       <ul class="drawer-menu">
         <li class="drawer-item p-2">
+            <label for="language">Language:</label>
+
+            <select id="language" onchange="changeLanguage(this)">
+              <option value="english">English</option>
+              <option value="spanish">Español</option>
+            </select> 
+        </li>
+        <li class="drawer-item p-2">
           <a href="#">Inicio</a>
         </li>
         <li class="drawer-item p-2">
@@ -190,7 +198,7 @@
               <p>
                 [CONOCIMIENTO] : { MongoDB, Express, Node, React, React Native }
               </p>
-              <p>[IDIOMAS] : { Spanish, English }</p>
+              <p>[IDIOMAS] : { Español, Inglés }</p>
             </div>
             <div class="terminal-scroller">
               <div class="terminal-scroller-bar"></div>
