@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vagus-Dev | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="lib/css/animate.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inconsolata|Tomorrow&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/63130eec7b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="lib/js/drawerActions.js"></script>
+  </head>
+  <body id="body">
+    <nav class="navbar p-1">
+      <ul class="navbar-menu">
+        <li class="navbar-item brand p-1">
+          <a href="#">VAGUS-DEV</a>
+        </li>
+        <li class="navbar-item md p-1">
+          <label for="language">Idioma:</label>
+
+          <select id="language" onchange="changeLanguage(this)">
+            <option value="spanish">Español</option>
+            <option value="english">English</option>
+          </select>
+        </li>
+        <li class="navbar-item md p-1">
+          <a href="#">Inicio</a>
+        </li>
+        <li class="navbar-item md p-1">
+          <a href="#">Información</a>
+        </li>
+        <li class="navbar-item md p-1">
+          <a href="#">Contacto</a>
+        </li>
+        <li class="navbar-item osm p-1" id="drawermenubtn">
+          <i class="fas fa-bars"></i>
+        </li>
+      </ul>
+    </nav>
+    <div id="overlay"></div>
+    <nav class="drawer osm" id="drawer">
+      <ul class="drawer-menu">
+        <li class="drawer-item p-2">
+          <a href="#">Inicio</a>
+        </li>
+        <li class="drawer-item p-2">
+          <a href="#">Información</a>
+        </li>
+        <li class="drawer-item p-2">
+          <a href="#">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="flex">
+      <div
+        class="portrait text-white"
+        style="background-image: url(img/header-1.jpg);"
+      >
+        <div class="portrait-overlay"></div>
+        <!--<img src="img/header-img.jpg" alt="" class="portrait-background">-->
+        <div class="portrait-text bottom p-3 animated fadeInUp">
+          <h1 class="portrait-title">AGUSTIN FAVORRETI</h1>
+          <h5 class="portrait-subtitle">Portfolio</h5>
+        </div>
+      </div>
+      <div class="container">
+        <div class="card-grid">
+          <div class="card animated fadeIn delay-1s">
+            <div class="card-menu">
+              <a
+                href="https://vagus-art.github.io/st-web/public/index.html"
+                class="text-white"
+                target="_blank"
+                ><i class="fas fa-eye"></i
+              ></a>
+              <a
+                href="https://github.com/Vagus-art/st-web"
+                class="text-white"
+                target="_blank"
+                ><i class="fas fa-code"></i
+              ></a>
+            </div>
+            <div class="card-overlay"></div>
+            <div
+              class="card-header"
+              style="background-image: url(img/pj-st.JPG);"
+            ></div>
+            <div class="card-body p-1">
+              <div class="card-text">
+                <h2 class="card-title">Santa Teresita Web</h2>
+                <div class="card-paragraph">
+                  Página estática para una empresa local. (solo programación)
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card animated fadeIn delay-2s">
+            <div class="card-menu">
+              <a class="text-white"><i class="fas fa-eye-slash"></i></a>
+              <a
+                href="https://github.com/Vagus-art/rn-stock-management"
+                class="text-white"
+                target="_blank"
+                ><i class="fas fa-code"></i
+              ></a>
+            </div>
+            <div class="card-overlay"></div>
+            <div
+              class="card-header"
+              style="background-image: url(img/pj-rn-stock.JPG);"
+            ></div>
+            <div class="card-body p-1">
+              <div class="card-text">
+                <h2 class="card-title">RN Stock (WIP)</h2>
+                <div class="card-paragraph">
+                  Aplicación de gestión de stock hecha con React Native y
+                  Firebase.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card animated fadeIn delay-3s">
+            <div class="card-menu">
+              <a
+                href="https://vagus-artistry.herokuapp.com/"
+                class="text-white"
+                target="_blank"
+                ><i class="fas fa-eye"></i
+              ></a>
+              <a
+                href="https://github.com/Vagus-art/artistry"
+                class="text-white"
+                target="_blank"
+                ><i class="fas fa-code"></i
+              ></a>
+            </div>
+            <div class="card-overlay"></div>
+            <div
+              class="card-header full"
+              style="background-image: url(img/pj-art.JPG);"
+            ></div>
+            <div class="card-body p-1">
+              <div class="card-text">
+                <h2 class="card-title">Artistry</h2>
+                <div class="card-paragraph">
+                  Proyecto programado en MERN, usa el api de imgur para subir
+                  imágenes, con un sistema de usuarios.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="portrait text-white"
+        style="background-image: url(img/header-3.jpg);"
+      >
+        <div class="portrait-overlay"></div>
+        <!--<img src="img/header-img.jpg" alt="" class="portrait-background">-->
+        <div class="portrait-text bottom p-3 animated fadeInUp">
+          <h1 class="portrait-title">INFORMACION</h1>
+          <h5 class="portrait-subtitle">--help</h5>
+        </div>
+      </div>
+      <div class="container">
+        <div class="terminal-container">
+          <div class="terminal-bar">
+            <h3 class="terminal-title">Terminal</h3>
+            <div class="terminal-buttons text-white">
+              <i class="far fa-window-minimize minimize"></i>
+              <i class="far fa-square"></i>
+              <i class="fas fa-times cross"></i>
+            </div>
+          </div>
+          <div class="terminal-grid">
+            <div class="terminal-text">
+              <p>
+                <span class="username">Vagus-dev@ubuntu </span
+                ><span class="text-white">: ~/user/info$ </span>whoami
+              </p>
+              <p>[NOMBRE] : Agustín Favoretti</p>
+              <p>[UBICACIÓN] : Buenos Aires, Argentina</p>
+              <p>
+                [CONOCIMIENTO] : { MongoDB, Express, Node, React, React Native }
+              </p>
+              <p>[IDIOMAS] : { Spanish, English }</p>
+            </div>
+            <div class="terminal-scroller">
+              <div class="terminal-scroller-bar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="portrait text-white"
+        style="background-image: url(img/header-2.jpg);"
+      >
+        <div class="portrait-overlay"></div>
+        <!--<img src="img/header-img.jpg" alt="" class="portrait-background">-->
+        <div class="portrait-text bottom p-3 animated fadeInUp">
+          <h1 class="portrait-title">CONTACTAME</h1>
+          <h5 class="portrait-subtitle">Usando los enlaces de abajo.</h5>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <a href="https://github.com/Vagus-art" class="text-white" target="_blank"
+        ><i class="fab fa-github"></i
+      ></a>
+      <a
+        href="https://www.linkedin.com/in/agust%C3%ADn-favoretti-5595b818b/"
+        class="text-white"
+        target="_blank"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+      <a href="#" class="text-white" target="_blank"
+        ><i class="fas fa-envelope-square"></i
+      ></a>
+    </footer>
+  </body>
+</html>
