@@ -12,6 +12,9 @@
  - Learn regular expressions
  - Relearn MongoDB
  - Learn hacking (injection, sniffing, etc)
+ - Relearn Python  (and maybe try a backend framework)
+ - Try Java (just for fun)
+ - Try asp.net core (curiosity)
 
 ## Frontend
 - Learn vue **(In progress)**
