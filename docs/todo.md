@@ -1,6 +1,19 @@
 # Personal Todo List
 
-## Backend
+## Projects
+
+### Backend
+ - GoLang monolithic REST api (similar to pg-rest-api)
+ - Nodejs/Express/TypeScript Microservices API with Dependency Injection and Clear Architecture. Using Sequelize or Hasura GraphQL. (With Auth)
+
+### Frontend
+ - Vue single instance pg-rest-api visualizator (crud) **almost done**
+ - Vue CLI pg-rest-api visualizator (crud)
+ - React pg-rest-api visualizator (crud)
+
+## Learning
+
+### Backend
  - Learn TypeScript
  - Learn Microservices Architecture
  - Learn Nginx
@@ -23,7 +36,7 @@
  - Try Java (just for fun)
  - Try asp.net core (curiosity)
 
-## Frontend
+### Frontend
 - Learn vue **(In progress)**
 - Learn GraphQL
 - Learn to dev React Native without Expo
