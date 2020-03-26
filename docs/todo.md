@@ -1,6 +1,12 @@
 # Personal Todo List
 
 ## Backend
+ - Learn Microservices Architecture
+ - Learn Nginx
+ - Learn Dependency Injection
+ - Learn BFF Pattern
+ - Investigate about infra
+ - Learn testing with mocha or jest
  - Learn auth (JWT and OAuth 2)
  - Learn caching
  - Learn logging and traffic limiting
@@ -23,3 +29,4 @@
 - Learn Dart and Flutter
 - Learn RxJs
 - Learn CSS backwards compatibility with fallbacks
+- Learn cypress testing
