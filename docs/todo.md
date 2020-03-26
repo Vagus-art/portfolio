@@ -1,6 +1,7 @@
 # Personal Todo List
 
 ## Backend
+ - Learn TypeScript
  - Learn Microservices Architecture
  - Learn Nginx
  - Learn Dependency Injection
