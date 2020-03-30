@@ -2,6 +2,9 @@
 
 ## Projects
 
+### Fullstack
+ - "Atrapasueños" Flutter app designed to write your dreams and encrypt them with a given password. Flutter frontend and NodeJS or GoLang Backend (hopefully using Microservices Architecture)
+
 ### Backend
  - GoLang monolithic REST api (similar to pg-rest-api)
  - Nodejs/Express/TypeScript Microservices API with Dependency Injection and Clear Architecture. Using Sequelize or Hasura GraphQL. (With Auth)
