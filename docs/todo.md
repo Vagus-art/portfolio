@@ -12,7 +12,7 @@
  - Nodejs/Express/TypeScript Microservices API with Dependency Injection and Clear Architecture. Using Sequelize or Hasura GraphQL. (With Auth) **maybe not, maybe I'll go the Java way**
 
 ### Frontend
- - Vue single instance pg-rest-api visualizator (crud) **almost done**
+ - Vue single instance pg-rest-api visualizator (crud) **done**
  - Vue CLI pg-rest-api visualizator (crud)
  - React pg-rest-api visualizator (crud)
 
@@ -42,7 +42,7 @@
  - Try asp.net core (curiosity)
 
 ### Frontend
-- Learn vue **(In progress)**
+- Learn vue **(almost done, I have to make a project using components, router and vuex)**
 - Learn GraphQL
 - Learn to dev React Native without Expo
 - Learn Dart and Flutter
