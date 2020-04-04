@@ -9,7 +9,9 @@
 
 ### Backend
  - GoLang/Java monolithic REST api (similar to pg-rest-api)
- - Nodejs/Express/TypeScript Microservices API with Dependency Injection and Clear Architecture. Using Sequelize or Hasura GraphQL. (With Auth) **maybe not, maybe I'll go the Java way**
+ - Nodejs/Express/TypeScript Microservices API with Dependency Injection and Clear Architecture. Using Sequelize or Hasura GraphQL. (With Auth) 
+ **NESTJS IS WHAT I WAS LOOKING FOR**
+ **maybe not, maybe I'll go the Java way**
 
 ### Frontend
  - Vue single instance pg-rest-api visualizator (crud) **done**
@@ -19,6 +21,7 @@
 ## Learning
 
 ### Backend
+ - Learn PlPgSQL (triggers at least)
  - Learn TypeScript (**done**)
  - Learn Java
  - Learn Microservices Architecture
